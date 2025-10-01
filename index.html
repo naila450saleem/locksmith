@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24/7 Emergency Locksmith Services | Fast Response</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e74c3c;
+            --accent: #f39c12;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --text: #333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo span {
+            color: var(--accent);
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            font-size: 28px;
+        }
+        
+        .contact-info {
+            text-align: right;
+        }
+        
+        .phone {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        
+        .tagline {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+     .call-btn {
+    background-color: #FF3B30; /* WhatsApp-style call-end red */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(255, 59, 48, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.call-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: 0.5s;
+}
+
+.call-btn:hover:before {
+    left: 100%;
+}
+
+.call-btn:hover {
+    background-color: #FF6659; /* thoda lighter red on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 59, 48, 0.4);
+    color: black;
+}
+
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+       .cta-button {
+    background-color: #FF3B30; /* WhatsApp-style red */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px; /* pill shape */
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; /* center text/icon */
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(255, 59, 48, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: 0.5s;
+}
+
+.cta-button:hover:before {
+    left: 100%;
+}
+
+.cta-button:hover {
+    background-color: #FF6659; /* slightly lighter red */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 59, 48, 0.4);
+    color: black;
+}
+
+        
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background-color: var(--light);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 36px;
+            color: var(--primary);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-icon {
+            background-color: var(--primary);
+            color: white;
+            font-size: 40px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .service-content {
+            padding: 20px;
+        }
+        
+        .service-content h3 {
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        
+        /* Opt-in Section */
+.opt-in {
+    padding: 80px 0;
+    background-color: var(--primary);
+    color: white;
+}
+
+.opt-in-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.opt-in-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.opt-in-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.opt-in-form {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Form grid for 2x2 fields */
+.opt-in-form form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* space between fields */
+}
+
+.opt-in-form .form-group {
+    flex: 1 1 calc(50% - 10px); /* 2 columns with gap adjustment */
+    min-width: 200px; /* ensures responsiveness */
+}
+
+/* Full width fields */
+.opt-in-form .form-group textarea,
+.opt-in-form .form-group select {
+    flex: 1 1 100%; /* textarea and select take full width */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Submit button */
+.submit-btn {
+    background-color: #FF3B30;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.submit-btn:hover {
+    background-color: #FF6659; /* slightly lighter red */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 59, 48, 0.4);
+    color: black;
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 768px) {
+    .opt-in-form .form-group {
+        flex: 1 1 100%; /* stack fields on small screens */
+    }
+}
+
+        
+        /* Why Choose Us */
+        .why-choose {
+            padding: 80px 0;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .feature-icon {
+            font-size: 40px;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+        
+        .feature h3 {
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        
+        /* FAQs */
+       .sections{padding:24px; background-color: #2c3e50; padding-left: 20%; padding-right: 20%;}
+        .faq details{background: transparent; border:1px solid rgba(148,163,184,.2); border-radius:12px; padding:12px 14px}
+    .faq details summary{cursor:pointer; color: #fff; font-weight:600;} 
+
+
+ 
+
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: var(--accent);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 14px;
+            color: #bbb;
+        }
+        
+        /* Modal for Policies */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+        
+        .modal-content {
+            background-color: white;
+            margin: 50px auto;
+            padding: 30px;
+            width: 90%;
+            max-width: 800px;
+            border-radius: 5px;
+            position: relative;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--dark);
+        }
+        
+        .policy-content {
+            max-height: 70vh;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+        
+        .policy-content h2 {
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        .policy-content h3 {
+            margin: 25px 0 15px;
+            color: var(--primary);
+        }
+        
+        .policy-content p {
+            margin-bottom: 15px;
+        }
+        
+        .policy-content ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .contact-info {
+                margin-top: 10px;
+                text-align: center;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-key"></i>
+                    Quick<span>Lock</span> Solutions
+                </div>
+                
+
+                        <a href="tel:+18445782868" class="call-btn">
+  <i class="fas fa-phone" style="margin-right:6px;"></i> 
+  Emergency Call Now
+</a>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Emergency Locksmith Services 24/7</h1>
+            <p>Locked out? Need new locks? Our certified locksmiths are ready to help you anytime, anywhere with fast response times.</p>
+            <a href="#opt-in" class="cta-button">GET HELP NOW</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Our Locksmith Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Emergency Lockout Service</h3>
+                        <p>Locked out of your home, car, or office? Our rapid response team will get you back in quickly and safely.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Lock Repair & Replacement</h3>
+                        <p>Broken or faulty locks? We repair all types of locks or replace them with high-security options.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Home Security Systems</h3>
+                        <p>Upgrade your home security with advanced lock systems, smart locks, and security solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opt-in Section -->
+    <section class="opt-in" id="opt-in">
+        <div class="container">
+            <div class="opt-in-container">
+                <div class="opt-in-content">
+                    <h2>Get Emergency Locksmith Help Now!</h2>
+                    <p>Fill out the form and our certified locksmith will contact you within minutes. We provide 24/7 emergency services with fast response times.</p>
+                    <ul>
+                        <li>✓ 24/7 Emergency Service</li>
+                        <li>✓ 15-30 Minute Average Response Time</li>
+                        <li>✓ Certified & Licensed Locksmiths</li>
+                        <li>✓ Affordable Pricing</li>
+                        <li>✓ 100% Satisfaction Guarantee</li>
+                    </ul>
+                </div>
+                <div class="opt-in-form">
+                    <h3 style="color: var(--primary); margin-bottom: 20px;">Request Service Now</h3>
+                    <form id="lead-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" class="form-control" required>
+                                <option value="">Select a service</option>
+                                <option value="lockout">Emergency Lockout</option>
+                                <option value="repair">Lock Repair</option>
+                                <option value="replacement">Lock Replacement</option>
+                                <option value="rekey">Rekeying</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Details</label>
+                            <textarea id="message" class="form-control" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">GET HELP NOW</button>
+                        <p style="font-size: 12px; margin-top: 15px; color: #666;">By submitting, you agree to our <a href="#" id="privacy-link">Privacy Policy</a> and <a href="#" id="terms-link">Terms of Service</a>.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose QuickLock Solutions?</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Availability</h3>
+                    <p>We're available round the clock, including holidays and weekends, for all your emergency locksmith needs.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Fast Response</h3>
+                    <p>Our technicians are strategically located to provide quick response times, typically within 15-30 minutes.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Licensed & Insured</h3>
+                    <p>All our locksmiths are licensed, bonded, and insured for your peace of mind and protection.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Affordable Pricing</h3>
+                    <p>We offer competitive, transparent pricing with no hidden fees. Get a free estimate before any work begins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+ <section class="sections">
+  <div class="section faq" style="background-color: #34495e; padding: 50px 20px; border-radius: 12px; margin-top: 40px;">
+    <h2 style="color: #f39c12; margin-bottom: 30px; text-align: center;">FAQs</h2>
+
+    <details style="background: #2c3e50; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 20px; margin-bottom: 15px;">
+      <summary style="color: #ffffff; font-weight: 600; cursor: pointer; font-size: 18px;">How fast can you get here?</summary>
+      <p style="color: #ecf0f1; margin-top: 10px; font-size: 16px; line-height: 1.5;">In most cases, 20–30 minutes depending on traffic and your exact location.</p>
+    </details>
+
+    <details style="background: #2c3e50; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 20px; margin-bottom: 15px;">
+      <summary style="color: #ffffff; font-weight: 600; cursor: pointer; font-size: 18px;">Are your prices fixed?</summary>
+      <p style="color: #ecf0f1; margin-top: 10px; font-size: 16px; line-height: 1.5;">We provide an up‑front estimate after diagnosis. No hidden fees, ever.</p>
+    </details>
+
+    <details style="background: #2c3e50; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 20px; margin-bottom: 15px;">
+      <summary style="color: #ffffff; font-weight: 600; cursor: pointer; font-size: 18px;">Can you open my car without damage?</summary>
+      <p style="color: #ecf0f1; margin-top: 10px; font-size: 16px; line-height: 1.5;">We use professional tools and non‑destructive methods whenever possible.</p>
+    </details>
+
+    <details style="background: #2c3e50; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 20px; margin-bottom: 15px;">
+      <summary style="color: #ffffff; font-weight: 600; cursor: pointer; font-size: 18px;">Do you work nights and weekends?</summary>
+      <p style="color: #ecf0f1; margin-top: 10px; font-size: 16px; line-height: 1.5;">Yes—24 hours a day, 7 days a week, including holidays.</p>
+    </details>
+
+  </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>QuickLock Solutions</h3>
+                    <p>Your trusted 24/7 emergency locksmith service provider with certified technicians and fast response times.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Emergency Lockout</a></li>
+                        <li><a href="#">Lock Repair</a></li>
+                        <li><a href="#">Lock Replacement</a></li>
+                        <li><a href="#">Rekeying</a></li>
+                        <li><a href="#">Security Systems</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> help@quicklocksolutions.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Serving All Metro Areas</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" id="privacy-link-footer">Privacy Policy</a></li>
+                        <li><a href="#" id="terms-link-footer">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 QuickLock Solutions. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="policy-content">
+                <h2>Privacy Policy</h2>
+                <p>Last updated: January 1, 2023</p>
+                
+                <h3>Information We Collect</h3>
+                <p>We collect information you provide directly to us, such as when you create an account, fill out a form, or contact us for support. This may include:</p>
+                <ul>
+                    <li>Personal identification information (name, email address, phone number, etc.)</li>
+                    <li>Service-related information</li>
+                    <li>Any other information you choose to provide</li>
+                </ul>
+                
+                <h3>How We Use Your Information</h3>
+                <p>We use the information we collect to:</p>
+                <ul>
+                    <li>Provide, maintain, and improve our services</li>
+                    <li>Respond to your comments, questions, and requests</li>
+                    <li>Send you technical notices, updates, and support messages</li>
+                    <li>Communicate with you about products, services, and promotions</li>
+                    <li>Monitor and analyze trends, usage, and activities in connection with our services</li>
+                </ul>
+                
+                <h3>Information Sharing</h3>
+                <p>We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information except in the following circumstances:</p>
+                <ul>
+                    <li>With your consent</li>
+                    <li>To comply with legal obligations</li>
+                    <li>To protect and defend our rights and property</li>
+                    <li>With service providers who assist us in operating our website and conducting our business</li>
+                </ul>
+                
+                <h3>Data Security</h3>
+                <p>We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+                
+                <h3>Your Rights</h3>
+                <p>You have the right to access, correct, or delete your personal information. You may also object to or restrict certain processing of your information.</p>
+                
+                <h3>Contact Us</h3>
+                <p>If you have any questions about this Privacy Policy, please contact us at privacy@quicklocksolutions.com.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms & Conditions Modal -->
+    <div id="terms-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="policy-content">
+                <h2>Terms and Conditions</h2>
+                <p>Last updated: January 1, 2023</p>
+                
+                <h3>Services</h3>
+                <p>QuickLock Solutions provides emergency locksmith services including but not limited to lockout assistance, lock repair, lock replacement, rekeying, and security system installation.</p>
+                
+                <h3>Service Availability</h3>
+                <p>We strive to provide 24/7 emergency services, but service availability may be affected by factors beyond our control, including weather conditions, traffic, and technician availability.</p>
+                
+                <h3>Pricing and Payment</h3>
+                <p>All prices are quoted before service begins. Additional charges may apply for services requested after work has commenced. Payment is due upon completion of services unless other arrangements have been made in advance.</p>
+                
+                <h3>Cancellation Policy</h3>
+                <p>If you need to cancel or reschedule your service appointment, please notify us at least 2 hours in advance. Late cancellations may be subject to a cancellation fee.</p>
+                
+                <h3>Warranty</h3>
+                <p>We warrant our workmanship and materials for a period of 90 days from the date of service. This warranty does not cover damage caused by misuse, abuse, or normal wear and tear.</p>
+                
+                <h3>Liability</h3>
+                <p>Our liability is limited to the cost of the services provided. We are not liable for any consequential or incidental damages resulting from our services.</p>
+                
+                <h3>Changes to Terms</h3>
+                <p>We reserve the right to modify these terms at any time. We will notify you of any changes by posting the new Terms and Conditions on this page.</p>
+                
+                <h3>Contact Information</h3>
+                <p>If you have any questions about these Terms and Conditions, please contact us at terms@quicklocksolutions.com.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Form submission
+        document.getElementById('lead-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your request! Our locksmith will contact you shortly.');
+            this.reset();
+        });
+        
+        // Modal functionality
+        const privacyModal = document.getElementById('privacy-modal');
+        const termsModal = document.getElementById('terms-modal');
+        const privacyLinks = document.querySelectorAll('#privacy-link, #privacy-link-footer');
+        const termsLinks = document.querySelectorAll('#terms-link, #terms-link-footer');
+        const closeButtons = document.querySelectorAll('.close-modal');
+        
+        // Open Privacy Policy
+        privacyLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                privacyModal.style.display = 'block';
+            });
+        });
+        
+        // Open Terms & Conditions
+        termsLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                termsModal.style.display = 'block';
+            });
+        });
+        
+        // Close modals
+        closeButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                privacyModal.style.display = 'none';
+                termsModal.style.display = 'none';
+            });
+        });
+        
+        // Close modal when clicking outside
+        window.addEventListener('click', function(e) {
+            if (e.target === privacyModal) {
+                privacyModal.style.display = 'none';
+            }
+            if (e.target === termsModal) {
+                termsModal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
