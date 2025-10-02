@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>24/7 Emergency Locksmith Services | Fast Response</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
             --primary: #2c3e50;
@@ -24,6 +25,7 @@
         body {
             color: var(--text);
             line-height: 1.6;
+            background-color: #f9f9f9;
         }
         
         .container {
@@ -81,52 +83,55 @@
             opacity: 0.8;
         }
 
-     .call-btn {
-    background-color: #FF3B30; /* WhatsApp-style call-end red */
-    color: white;
-    padding: 12px 25px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-    transition: all 0.3s;
-    box-shadow: 0 4px 6px rgba(255, 59, 48, 0.3);
-    position: relative;
-    overflow: hidden;
-}
+        .call-btn {
+            background-color: #FF3B30;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.3s;
+            box-shadow: 0 4px 6px rgba(255, 59, 48, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
 
-.call-btn:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-    transition: 0.5s;
-}
+        .call-btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: 0.5s;
+        }
 
-.call-btn:hover:before {
-    left: 100%;
-}
+        .call-btn:hover:before {
+            left: 100%;
+        }
 
-.call-btn:hover {
-    background-color: #FF6659; /* thoda lighter red on hover */
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(255, 59, 48, 0.4);
-    color: black;
-}
-
+        .call-btn:hover {
+            background-color: #FF6659;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(255, 59, 48, 0.4);
+            color: black;
+        }
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
+            background: 
+                linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.9)),
+                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M30,20 C30,15 35,10 40,10 L60,10 C65,10 70,15 70,20 L70,40 C70,45 65,50 60,50 L40,50 C35,50 30,45 30,40 Z" fill="none" stroke="%23f39c12" stroke-width="2"/><rect x="45" y="10" width="10" height="15" fill="%23f39c12"/><circle cx="50" cy="35" r="5" fill="none" stroke="%23f39c12" stroke-width="2"/></svg>');
+            background-size: cover, 150px;
             background-position: center;
             color: white;
             padding: 100px 0;
             text-align: center;
+            position: relative;
+            overflow: hidden;
         }
         
         .hero h1 {
@@ -141,193 +146,206 @@
             margin: 0 auto 30px;
         }
         
-       .cta-button {
-    background-color: #FF3B30; /* WhatsApp-style red */
-    color: white;
-    padding: 12px 25px;
-    border-radius: 50px; /* pill shape */
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center; /* center text/icon */
-    transition: all 0.3s;
-    box-shadow: 0 4px 6px rgba(255, 59, 48, 0.3);
-    position: relative;
-    overflow: hidden;
-}
+        .cta-button {
+            background-color: #FF3B30;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            box-shadow: 0 4px 6px rgba(255, 59, 48, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
 
-.cta-button:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-    transition: 0.5s;
-}
+        .cta-button:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: 0.5s;
+        }
 
-.cta-button:hover:before {
-    left: 100%;
-}
+        .cta-button:hover:before {
+            left: 100%;
+        }
 
-.cta-button:hover {
-    background-color: #FF6659; /* slightly lighter red */
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(255, 59, 48, 0.4);
-    color: black;
-}
-
+        .cta-button:hover {
+            background-color: #FF6659;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(255, 59, 48, 0.4);
+            color: black;
+        }
         
         /* Services Section */
         .services {
-            padding: 80px 0;
-            background-color: var(--light);
+            padding: 60px 20px;
+            background-color: white;
         }
         
         .section-title {
             text-align: center;
-            margin-bottom: 50px;
-            font-size: 36px;
+            font-size: 2rem;
             color: var(--primary);
+            margin-bottom: 40px;
         }
         
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+        
+        @media (min-width: 768px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
         
         .service-card {
-            background-color: white;
-            border-radius: 5px;
+            background: white;
+            border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
+            border: 1px solid #eee;
         }
         
         .service-card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-5px);
         }
         
-        .service-icon {
-            background-color: var(--primary);
-            color: white;
-            font-size: 40px;
-            padding: 20px;
-            text-align: center;
+        .service-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            object-position: top;
+            border-bottom: 2px solid #eee;
         }
         
         .service-content {
             padding: 20px;
         }
         
-        .service-content h3 {
-            margin-bottom: 10px;
+        .service-title {
+            font-size: 1.3rem;
             color: var(--primary);
+            margin-bottom: 10px;
         }
         
         /* Opt-in Section */
-.opt-in {
-    padding: 80px 0;
-    background-color: var(--primary);
-    color: white;
-}
+        .opt-in {
+            padding: 80px 0;
+            background-color: var(--primary);
+            color: white;
+        }
 
-.opt-in-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 50px;
-}
+        .opt-in-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 50px;
+        }
 
-.opt-in-content {
-    flex: 1;
-    min-width: 300px;
-}
+        .opt-in-content {
+            flex: 1;
+            min-width: 300px;
+        }
 
-.opt-in-content h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
+        .opt-in-content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
 
-.opt-in-form {
-    flex: 1;
-    min-width: 300px;
-    background-color: white;
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
+        .opt-in-form {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
 
-/* Form grid for 2x2 fields */
-.opt-in-form form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* space between fields */
-}
+        /* Form grid for 2x2 fields */
+        .opt-in-form form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
 
-.opt-in-form .form-group {
-    flex: 1 1 calc(50% - 10px); /* 2 columns with gap adjustment */
-    min-width: 200px; /* ensures responsiveness */
-}
+        .opt-in-form .form-group {
+            flex: 1 1 calc(50% - 10px);
+            min-width: 200px;
+        }
 
-/* Full width fields */
-.opt-in-form .form-group textarea,
-.opt-in-form .form-group select {
-    flex: 1 1 100%; /* textarea and select take full width */
-}
+        /* Full width fields */
+        .opt-in-form .form-group textarea,
+        .opt-in-form .form-group select {
+            flex: 1 1 100%;
+        }
 
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: var(--dark);
-    font-weight: 600;
-}
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--dark);
+            font-weight: 600;
+        }
 
-.form-control {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-}
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
 
-/* Submit button */
-.submit-btn {
-    background-color: #FF3B30;
-    color: white;
-    border: none;
-    padding: 15px;
-    width: 100%;
-    font-size: 18px;
-    font-weight: 700;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
+        /* Submit button */
+        .submit-btn {
+            background-color: #FF3B30;
+            color: white;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
 
-.submit-btn:hover {
-    background-color: #FF6659; /* slightly lighter red */
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(255, 59, 48, 0.4);
-    color: black;
-}
+        .submit-btn:hover {
+            background-color: #FF6659;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(255, 59, 48, 0.4);
+            color: black;
+        }
 
-/* Responsive adjustment for mobile */
-@media (max-width: 768px) {
-    .opt-in-form .form-group {
-        flex: 1 1 100%; /* stack fields on small screens */
-    }
-}
-
+        /* Responsive adjustment for mobile */
+        @media (max-width: 768px) {
+            .opt-in-form .form-group {
+                flex: 1 1 100%;
+            }
+        }
         
         /* Why Choose Us */
         .why-choose {
             padding: 80px 0;
+            background-color: #f9f9f9;
         }
         
         .features {
@@ -340,6 +358,9 @@
         .feature {
             text-align: center;
             padding: 30px 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
         }
         
         .feature-icon {
@@ -354,13 +375,25 @@
         }
         
         /* FAQs */
-       .sections{padding:24px; background-color: #2c3e50; padding-left: 20%; padding-right: 20%;}
-        .faq details{background: transparent; border:1px solid rgba(148,163,184,.2); border-radius:12px; padding:12px 14px}
-    .faq details summary{cursor:pointer; color: #fff; font-weight:600;} 
-
-
- 
-
+        .sections {
+            padding: 24px;
+            background-color: #2c3e50;
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+        
+        .faq details {
+            background: transparent;
+            border: 1px solid rgba(148,163,184,.2);
+            border-radius: 12px;
+            padding: 12px 14px;
+        }
+        
+        .faq details summary {
+            cursor: pointer;
+            color: #fff;
+            font-weight: 600;
+        }
         
         /* Footer */
         footer {
@@ -484,9 +517,61 @@
             .hero p {
                 font-size: 18px;
             }
+            
+            .sections {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+        }
+
+        /* Floating Call Button (Right Bottom) */
+        .floating-call-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #FF3B30;
+            color: #fff;
+            font-size: 24px;
+            width: 55px;
+            height: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            text-decoration: none;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+            animation: floatBtn 2s ease-in-out infinite;
+            z-index: 999;
+            transition: all 0.3s ease;
+        }
+
+        .floating-call-btn:hover {
+            background-color: #FF6659;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(255, 59, 48, 0.4);
+            color: black;
+        }
+
+        /* Floating Animation (Up-Down) */
+        @keyframes floatBtn {
+            0%   { transform: translateY(0); }
+            50%  { transform: translateY(-8px); }
+            100% { transform: translateY(0); }
+        }
+        
+        /* Lock Pattern Background */
+        .lock-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M30,20 C30,15 35,10 40,10 L60,10 C65,10 70,15 70,20 L70,40 C70,45 65,50 60,50 L40,50 C35,50 30,45 30,40 Z" fill="none" stroke="%23f39c12" stroke-width="2"/><rect x="45" y="10" width="10" height="15" fill="%23f39c12"/><circle cx="50" cy="35" r="5" fill="none" stroke="%23f39c12" stroke-width="2"/></svg>');
+            background-size: 80px;
+            z-index: -1;
         }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
@@ -498,18 +583,17 @@
                     Quick<span>Lock</span> Solutions
                 </div>
                 
-
-                        <a href="tel:+18445782868" class="call-btn">
-  <i class="fas fa-phone" style="margin-right:6px;"></i> 
-  Emergency Call Now
-</a>
-
+                <a href="tel:+18445782868" class="call-btn">
+                    <i class="fas fa-phone" style="margin-right:6px;"></i> 
+                    Emergency Call Now
+                </a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="lock-pattern"></div>
         <div class="container">
             <h1>Emergency Locksmith Services 24/7</h1>
             <p>Locked out? Need new locks? Our certified locksmiths are ready to help you anytime, anywhere with fast response times.</p>
@@ -517,34 +601,30 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+   <!-- Services Section -->
     <section class="services">
         <div class="container">
-            <h2 class="section-title">Our Locksmith Services</h2>
+            <h2 class="section-title">Our Lock Services</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-lock"></i>
-                    </div>
+                    <img src="images/1.jpeg" alt="HVAC Installation" class="service-img">
                     <div class="service-content">
                         <h3>Emergency Lockout Service</h3>
-                        <p>Locked out of your home, car, or office? Our rapid response team will get you back in quickly and safely.</p>
+                        <p>24/7 emergency locksmith services for homes, cars, and businesses. Licensed, insured, and available right now.</p>
                     </div>
                 </div>
+                
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-key"></i>
-                    </div>
+                    <img src="images/2.jpeg" alt="HVAC Maintenance" class="service-img">
                     <div class="service-content">
                         <h3>Lock Repair & Replacement</h3>
                         <p>Broken or faulty locks? We repair all types of locks or replace them with high-security options.</p>
                     </div>
                 </div>
+                
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <div class="service-content">
+                    <img src="images/3.jpeg" alt="Gas Furnace Repair" class="service-img">
+                     <div class="service-content">
                         <h3>Home Security Systems</h3>
                         <p>Upgrade your home security with advanced lock systems, smart locks, and security solutions.</p>
                     </div>
@@ -644,34 +724,31 @@
     </section>
 
     <!-- Testimonials -->
- <section class="sections">
-  <div class="section faq" style="background-color: #34495e; padding: 50px 20px; border-radius: 12px; margin-top: 40px;">
-    <h2 style="color: #f39c12; margin-bottom: 30px; text-align: center;">FAQs</h2>
+    <section class="sections">
+        <div class="section faq" style="background-color: #34495e; padding: 50px 20px; border-radius: 12px; margin-top: 40px;">
+            <h2 style="color: #f39c12; margin-bottom: 30px; text-align: center;">FAQs</h2>
 
-    <details style="background: #2c3e50; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 20px; margin-bottom: 15px;">
-      <summary style="color: #ffffff; font-weight: 600; cursor: pointer; font-size: 18px;">How fast can you get here?</summary>
-      <p style="color: #ecf0f1; margin-top: 10px; font-size: 16px; line-height: 1.5;">In most cases, 20–30 minutes depending on traffic and your exact location.</p>
-    </details>
+            <details style="background: #2c3e50; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 20px; margin-bottom: 15px;">
+                <summary style="color: #ffffff; font-weight: 600; cursor: pointer; font-size: 18px;">How fast can you get here?</summary>
+                <p style="color: #ecf0f1; margin-top: 10px; font-size: 16px; line-height: 1.5;">In most cases, 20–30 minutes depending on traffic and your exact location.</p>
+            </details>
 
-    <details style="background: #2c3e50; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 20px; margin-bottom: 15px;">
-      <summary style="color: #ffffff; font-weight: 600; cursor: pointer; font-size: 18px;">Are your prices fixed?</summary>
-      <p style="color: #ecf0f1; margin-top: 10px; font-size: 16px; line-height: 1.5;">We provide an up‑front estimate after diagnosis. No hidden fees, ever.</p>
-    </details>
+            <details style="background: #2c3e50; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 20px; margin-bottom: 15px;">
+                <summary style="color: #ffffff; font-weight: 600; cursor: pointer; font-size: 18px;">Are your prices fixed?</summary>
+                <p style="color: #ecf0f1; margin-top: 10px; font-size: 16px; line-height: 1.5;">We provide an up‑front estimate after diagnosis. No hidden fees, ever.</p>
+            </details>
 
-    <details style="background: #2c3e50; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 20px; margin-bottom: 15px;">
-      <summary style="color: #ffffff; font-weight: 600; cursor: pointer; font-size: 18px;">Can you open my car without damage?</summary>
-      <p style="color: #ecf0f1; margin-top: 10px; font-size: 16px; line-height: 1.5;">We use professional tools and non‑destructive methods whenever possible.</p>
-    </details>
+            <details style="background: #2c3e50; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 20px; margin-bottom: 15px;">
+                <summary style="color: #ffffff; font-weight: 600; cursor: pointer; font-size: 18px;">Can you open my car without damage?</summary>
+                <p style="color: #ecf0f1; margin-top: 10px; font-size: 16px; line-height: 1.5;">We use professional tools and non‑destructive methods whenever possible.</p>
+            </details>
 
-    <details style="background: #2c3e50; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 20px; margin-bottom: 15px;">
-      <summary style="color: #ffffff; font-weight: 600; cursor: pointer; font-size: 18px;">Do you work nights and weekends?</summary>
-      <p style="color: #ecf0f1; margin-top: 10px; font-size: 16px; line-height: 1.5;">Yes—24 hours a day, 7 days a week, including holidays.</p>
-    </details>
-
-  </div>
-</section>
-
-
+            <details style="background: #2c3e50; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 20px; margin-bottom: 15px;">
+                <summary style="color: #ffffff; font-weight: 600; cursor: pointer; font-size: 18px;">Do you work nights and weekends?</summary>
+                <p style="color: #ecf0f1; margin-top: 10px; font-size: 16px; line-height: 1.5;">Yes—24 hours a day, 7 days a week, including holidays.</p>
+            </details>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -694,7 +771,7 @@
                 <div class="footer-column">
                     <h3>Contact Us</h3>
                     <ul class="footer-links">
-                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-phone"></i> (844) 578-2868</li>
                         <li><i class="fas fa-envelope"></i> help@quicklocksolutions.com</li>
                         <li><i class="fas fa-map-marker-alt"></i> Serving All Metro Areas</li>
                     </ul>
@@ -794,6 +871,11 @@
             </div>
         </div>
     </div>
+
+    <!-- Floating Call Button (Fixed at Bottom Right) -->
+    <a href="tel:+18445782868" class="floating-call-btn">
+        <i class="fas fa-phone"></i>
+    </a>
 
     <script>
         // Form submission
